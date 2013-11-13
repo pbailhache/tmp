@@ -51,7 +51,11 @@ public:
     inline bool operator== (const Data &D2) const
     {
     	//cout << "Je compare derp derp" << endl;
-    	sleep(1);
+    	//sleep(1);
+    	for (int i = 0; i < 100000000000; ++i)
+    	{
+    		/* code */
+    	}
     	//cout << "Data source : " << data << " == " << D2.data << endl;
     	return (data == D2.data);
 
