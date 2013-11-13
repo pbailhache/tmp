@@ -52,6 +52,7 @@ public:
     {
     	cout << "Je compare derp derp" << endl;
     	//sleep(500);
+    	cout << "Data source : " << data << " == " << D2.data << endl; 
     	return (data == D2.data);
 
     }
