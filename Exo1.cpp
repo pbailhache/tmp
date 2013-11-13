@@ -52,7 +52,7 @@ public:
     {
     	//cout << "Je compare derp derp" << endl;
     	//sleep(1);
-    	for (int i = 0; i < 100000000000; ++i)
+    	for (int i = 0; i < 1000000; ++i)
     	{
     		/* code */
     	}
