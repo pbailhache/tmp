@@ -50,9 +50,9 @@ public:
 
     inline bool operator== (const Data &D2) const
     {
-    	cout << "Je compare derp derp" << endl;
-    	//sleep(500);
-    	cout << "Data source : " << data << " == " << D2.data << endl;
+    	//cout << "Je compare derp derp" << endl;
+    	sleep(50);
+    	//cout << "Data source : " << data << " == " << D2.data << endl;
     	return (data == D2.data);
 
     }
