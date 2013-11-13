@@ -52,7 +52,7 @@ public:
     {
     	cout << "Je compare derp derp" << endl;
     	//sleep(500);
-    	cout << "Data source : " << data << " == " << D2.data << endl; 
+    	cout << "Data source : " << data << " == " << D2.data << endl;
     	return (data == D2.data);
 
     }
@@ -166,7 +166,7 @@ struct Resultat RecurrenceMaj(int i, int j)
 	}
 	if (gauche.b && droite.b)
 	{
-		if(*gauche.e == *droite.e)
+		if(droite.e != NULL && gauche.e != NULL && *gauche.e == *droite.e)
 		{
 			result.b = true;
 			result.e = droite.e;
@@ -239,7 +239,7 @@ struct Resultat PseudoMajoritaire(int i, int j)
 	}
 	if (gauche.b && droite.b)
 	{
-		if (*gauche.e == *droite.e)
+		if (droite.e != NULL && gauche.e != NULL && *gauche.e == *droite.e)
 		{
 			result.b = true;
 			result.e = gauche.e;
