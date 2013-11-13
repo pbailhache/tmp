@@ -372,7 +372,7 @@ int main(int argc, char * argv[])
  	vector_element.clear();
 	initRand();
  	cout << "START RANDOM" << endl;
- 	clock_t startTime = clock();
+ 	startTime = clock();
 	// some code here
 
 	result = naiveMaj();
@@ -405,7 +405,7 @@ int main(int argc, char * argv[])
  	vector_element.clear();
 	initSame();
  	cout << "START SAME" << endl;
- 	clock_t startTime = clock();
+ 	startTime = clock();
 	// some code here
 
 	result = naiveMaj();
