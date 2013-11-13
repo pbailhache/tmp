@@ -52,7 +52,7 @@ public:
     {
     	//cout << "Je compare derp derp" << endl;
     	//usleep(500);
-    	for (int i = 0; i < 1000000; ++i)
+    	for (int i = 0; i < 10000000; ++i)
     	{
     	}
     	//cout << "Data source : " << data << " == " << D2.data << endl;
