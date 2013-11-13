@@ -74,8 +74,7 @@ typedef Data* Element;
 
 vector<Element> vector_element;
 vector<Data> my_vector;
-int N = 1000;
-
+int N =100;
 struct Resultat
 {
 	bool b;
@@ -326,7 +325,7 @@ int main(int argc, char * argv[])
 	my_vector.push_back(d4);
 	my_vector.push_back(d5);
 
-	int N = 1000;
+	int N = 100;
 
  	//
  	// END INIT
