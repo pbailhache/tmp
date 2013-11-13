@@ -51,14 +51,14 @@ public:
     inline bool operator== (const Data &D2) const
     {
     	cout << "Je compare derp derp" << endl;
-    	sleep(500);
+    	//sleep(500);
     	return (data == D2.data);
 
     }
 
     inline bool operator!= (const Data &D2) const
     {
-    	sleep(500);
+    	//sleep(500);
     	return (data != D2.data);
     }
 
