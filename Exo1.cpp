@@ -50,6 +50,7 @@ public:
 
     inline bool operator== (const Data &D2) const
     {
+    	cout << "Je compare derp derp" << endl;
     	sleep(500);
     	return (data == D2.data);
 
@@ -164,7 +165,7 @@ struct Resultat RecurrenceMaj(int i, int j)
 	}
 	if (gauche.b && droite.b)
 	{
-		if(gauche.e == droite.e)
+		if(*gauche.e == *droite.e)
 		{
 			result.b = true;
 			result.e = droite.e;
@@ -237,7 +238,7 @@ struct Resultat PseudoMajoritaire(int i, int j)
 	}
 	if (gauche.b && droite.b)
 	{
-		if (gauche.e == droite.e)
+		if (*gauche.e == *droite.e)
 		{
 			result.b = true;
 			result.e = gauche.e;
