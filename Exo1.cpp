@@ -52,7 +52,7 @@ public:
     {
     	//cout << "Je compare derp derp" << endl;
     	//sleep(1);
-    	for (int i = 0; i < 100000000; ++i)
+    	for (int i = 0; i < 10000000; ++i)
     	{
     		/* code */
     	}
@@ -75,7 +75,7 @@ typedef Data* Element;
 
 vector<Element> vector_element;
 vector<Data> my_vector;
-int N = 10000;
+int N = 100;
 
 struct Resultat
 {
@@ -90,7 +90,7 @@ int occ(Element e,int i,int j)
 	int result = 0;
 	for(int k = i;k<j;k++)
 	{
-		if (vector_element[k] == e)
+		if (*vector_element[k] == *e)
 		{
 			result++;
 		}
