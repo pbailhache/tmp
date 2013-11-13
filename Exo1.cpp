@@ -89,7 +89,7 @@ int occ(Element e,int i,int j)
 	int result = 0;
 	for(int k = i;k<j;k++)
 	{
-		if (*vector_element[k] == *e)
+		if (e != NULL && *vector_element[k] == *e)
 		{
 			result++;
 		}
