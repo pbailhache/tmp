@@ -74,7 +74,7 @@ typedef Data* Element;
 
 vector<Element> vector_element;
 vector<Data> my_vector;
-int N = 100;
+int N = 1000;
 
 struct Resultat
 {
@@ -326,9 +326,7 @@ int main(int argc, char * argv[])
 	my_vector.push_back(d4);
 	my_vector.push_back(d5);
 
-	initMaj();
-
- 	
+	int N = 1000;
 
  	//
  	// END INIT
@@ -338,7 +336,75 @@ int main(int argc, char * argv[])
 
 
 
- 	cout << "START" << endl;
+	vector_element.clear();
+	initMaj();
+ 	cout << "START MAJORITAIRE END" << endl;
+ 	clock_t startTime = clock();
+	// some code here
+
+	result = naiveMaj();
+
+	// to compute its execution duration in runtime
+	cout << "naiveMaj = " <<  double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+
+	startTime = clock();
+	// some code here
+
+	result = RecurrenceMaj(0,N);
+
+	// to compute its execution duration in runtime
+	cout << "RecurrenceMaj = " << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+
+	startTime = clock();
+	// some code here
+
+	result = PseudoMajoritaireLaunch(0,N);
+
+	// to compute its execution duration in runtime
+	cout << "PseudoMajoritaireLaunch = " <<  double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+
+ 	if(result.b)
+ 	{
+ 		cout << "MAJ = " << result.e->toString() << endl;
+ 	}
+
+
+ 	vector_element.clear();
+	initRand();
+ 	cout << "START RANDOM" << endl;
+ 	clock_t startTime = clock();
+	// some code here
+
+	result = naiveMaj();
+
+	// to compute its execution duration in runtime
+	cout << "naiveMaj = " <<  double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+
+	startTime = clock();
+	// some code here
+
+	result = RecurrenceMaj(0,N);
+
+	// to compute its execution duration in runtime
+	cout << "RecurrenceMaj = " << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+
+	startTime = clock();
+	// some code here
+
+	result = PseudoMajoritaireLaunch(0,N);
+
+	// to compute its execution duration in runtime
+	cout << "PseudoMajoritaireLaunch = " <<  double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << endl;
+
+
+ 	if(result.b)
+ 	{
+ 		cout << "MAJ = " << result.e->toString() << endl;
+ 	}
+
+ 	vector_element.clear();
+	initSame();
+ 	cout << "START SAME" << endl;
  	clock_t startTime = clock();
 	// some code here
 
