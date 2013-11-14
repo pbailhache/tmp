@@ -305,42 +305,9 @@ struct Resultat PseudoMajoritaireLaunch(int i, int j)
 	}
 }
 
-
-int main(int argc, char * argv[])
+void launchTests()
 {
-	//
-	// INIT 
-	// Change N to increase the vector size
-
-	srand (time(NULL));
-	Data d1("DATA1");
-	Data d2("DATA2");
-	Data d3("void.txt");
-	Data d4("DATA4");
-	Data d5("DATA3");
-	Data d6("DATA6");
-	Data d7("DATA7");
-	Data d8("DATA8");
-	Data d9("DATA9");
-
-	my_vector.push_back(d1);
-	my_vector.push_back(d2);
-	my_vector.push_back(d3);
-	my_vector.push_back(d4);
-	my_vector.push_back(d5);
-	my_vector.push_back(d6);
-	my_vector.push_back(d7);
-	my_vector.push_back(d8);
-	my_vector.push_back(d9);
-
-	int N = 100;
-
- 	//
- 	// END INIT
- 	//
-
- 	struct Resultat result;
-
+	struct Resultat result;
 
 
 	vector_element.clear();
@@ -374,7 +341,6 @@ int main(int argc, char * argv[])
  	{
  		cout << "MAJ = " << result.e->toString() << endl;
  	}
-
 
  	vector_element.clear();
 	initRand();
@@ -441,5 +407,41 @@ int main(int argc, char * argv[])
  	{
  		cout << "MAJ = " << result.e->toString() << endl;
  	}
-
 }
+
+int main(int argc, char * argv[])
+{
+	//
+	// INIT 
+	// Change N to increase the vector size
+
+	srand (time(NULL));
+	Data d1("DATA1");
+	Data d2("DATA2");
+	Data d3("void.txt");
+	Data d4("DATA4");
+	Data d5("DATA3");
+	Data d6("DATA6");
+	Data d7("DATA7");
+	Data d8("DATA8");
+	Data d9("DATA9");
+
+	//my_vector.clear();
+
+	my_vector.push_back(d1);
+	my_vector.push_back(d2);
+	my_vector.push_back(d3);
+	my_vector.push_back(d4);
+	my_vector.push_back(d5);
+	my_vector.push_back(d6);
+	my_vector.push_back(d7);
+	my_vector.push_back(d8);
+	my_vector.push_back(d9);
+
+	int N = 100;
+
+	launchTests();
+}
+
+
+
