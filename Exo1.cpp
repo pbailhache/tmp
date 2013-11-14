@@ -51,7 +51,7 @@ public:
     inline bool operator== (const Data &D2) const
     {
     	//cout << "Je compare derp derp" << endl;
-    	usleep(20);
+    	usleep(200);
     	/*for (int i = 0; i < 1000000; ++i)
     	{
     	}*/
