@@ -449,7 +449,7 @@ int main(int argc, char * argv[])
 	my_vector.push_back(d7);
 	my_vector.push_back(d8);
 	my_vector.push_back(d9);
-	int N = 1000;
+	N = 1000;
 	launchTests();
 
 
@@ -459,7 +459,7 @@ int main(int argc, char * argv[])
 	my_vector.push_back(d2);
 	my_vector.push_back(d8);
 	my_vector.push_back(d9);
-	int N = 100;
+	N = 100;
 	launchTests();
 
 	my_vector.clear();
@@ -467,7 +467,7 @@ int main(int argc, char * argv[])
 	my_vector.push_back(d2);
 	my_vector.push_back(d3);
 	my_vector.push_back(d9);
-	int N = 1000;
+	N = 1000;
 	launchTests();
 
 
