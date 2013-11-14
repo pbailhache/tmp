@@ -426,7 +426,6 @@ int main(int argc, char * argv[])
 	Data d8("DATA8");
 	Data d9("DATA9");
 
-	//my_vector.clear();
 
 	my_vector.push_back(d1);
 	my_vector.push_back(d2);
@@ -437,10 +436,44 @@ int main(int argc, char * argv[])
 	my_vector.push_back(d7);
 	my_vector.push_back(d8);
 	my_vector.push_back(d9);
-
 	int N = 100;
-
 	launchTests();
+
+
+	my_vector.clear();
+	my_vector.push_back(d1);
+	my_vector.push_back(d2);
+	my_vector.push_back(d3);
+	my_vector.push_back(d4);
+	my_vector.push_back(d6);
+	my_vector.push_back(d7);
+	my_vector.push_back(d8);
+	my_vector.push_back(d9);
+	int N = 1000;
+	launchTests();
+
+
+
+	my_vector.clear();
+	my_vector.push_back(d1);
+	my_vector.push_back(d2);
+	my_vector.push_back(d8);
+	my_vector.push_back(d9);
+	int N = 100;
+	launchTests();
+
+	my_vector.clear();
+	my_vector.push_back(d1);
+	my_vector.push_back(d2);
+	my_vector.push_back(d3);
+	my_vector.push_back(d9);
+	int N = 1000;
+	launchTests();
+
+
+
+
+
 }
 
 
